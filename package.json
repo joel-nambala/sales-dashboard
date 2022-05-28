@@ -1,0 +1,25 @@
+{
+  "name": "sales-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for the sales of a Shajma sales company",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "start": "watch devserver --parallel",
+    "build": "node-sass -o css/style.css css/style.min.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joel-nambala/sales-dashboard.git"
+  },
+  "author": "joel nambala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joel-nambala/sales-dashboard/issues"
+  },
+  "homepage": "https://github.com/joel-nambala/sales-dashboard#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
