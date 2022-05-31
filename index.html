@@ -5,7 +5,243 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+
     <title>Sales dashboard</title>
   </head>
-  <body></body>
+  <body>
+    <div class="grid-container">
+      <div class="sidebar">
+        <h2 class="heading-2 heading-2--light">
+          <i class="fa-brands fa-apple"></i>Shajma Industries
+        </h2>
+        <ul class="sidebar__nav">
+          <li class="sidebar__item">
+            <i class="fa-solid fa-house-chimney"></i>Dashboard
+          </li>
+          <li class="sidebar__item">
+            <i class="fa-solid fa-user"></i>Customers
+          </li>
+          <li class="sidebar__item">
+            <i class="fa-solid fa-comment"></i>messages
+          </li>
+          <li class="sidebar__item">
+            <i class="fa-solid fa-circle-question"></i>help
+          </li>
+          <li class="sidebar__item"><i class="fa-solid fa-gear"></i>setting</li>
+          <li class="sidebar__item">
+            <i class="fa-solid fa-lock"></i>password
+          </li>
+          <li class="sidebar__item">
+            <i class="fa-solid fa-right-from-bracket"></i>sign out
+          </li>
+        </ul>
+      </div>
+      <nav class="navigation">
+        <i class="fa-solid fa-bars navigation__bar"></i>
+        <label for="search" class="navigation__label">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Search here"
+            class="navigation__search"
+          />
+        </label>
+        <figure class="navigation__photo">
+          <img src="img/user.jpg" alt="User" class="navigation__img" />
+        </figure>
+      </nav>
+      <div class="views">
+        <div class="card">
+          <p class="card__value">1,042</p>
+          <p class="card__review">daily views</p>
+          <i class="fa-solid fa-eye card__icon"></i>
+        </div>
+
+        <div class="card">
+          <p class="card__value">80</p>
+          <p class="card__review">sales</p>
+          <i class="fa-solid fa-cart-shopping card__icon"></i>
+        </div>
+
+        <div class="card">
+          <p class="card__value">202</p>
+          <p class="card__review">comments</p>
+          <i class="fa-solid fa-comments card__icon"></i>
+        </div>
+
+        <div class="card">
+          <p class="card__value">$6,402</p>
+          <p class="card__review">earning</p>
+          <i class="fa-solid fa-dollar-sign card__icon"></i>
+        </div>
+      </div>
+      <div class="orders">
+        <div class="header">
+          <h3 class="heading-3">Recent orders</h3>
+          <button class="orders__view btn-info">view all</button>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Payment</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>star refrigerator</td>
+              <td>$1200</td>
+              <td>paid</td>
+              <td>delivered</td>
+            </tr>
+            <tr>
+              <td>window coolers</td>
+              <td>$110</td>
+              <td>due</td>
+              <td>pending</td>
+            </tr>
+            <tr>
+              <td>speakers</td>
+              <td>$620</td>
+              <td>due</td>
+              <td>return</td>
+            </tr>
+            <tr>
+              <td>hp laptop</td>
+              <td>$110</td>
+              <td>due</td>
+              <td>in progress</td>
+            </tr>
+            <tr>
+              <td>apple watch</td>
+              <td>$1200</td>
+              <td>paid</td>
+              <td>delivered</td>
+            </tr>
+            <tr>
+              <td>wall fan</td>
+              <td>$110</td>
+              <td>paid</td>
+              <td>pending</td>
+            </tr>
+            <tr>
+              <td>addidas shoes</td>
+              <td>$620</td>
+              <td>paid</td>
+              <td>return</td>
+            </tr>
+            <tr>
+              <td>denim shirts</td>
+              <td>$110</td>
+              <td>due</td>
+              <td>in progress</td>
+            </tr>
+            <tr>
+              <td>casual shoes</td>
+              <td>$575</td>
+              <td>paid</td>
+              <td>pending</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="customers">
+        <h3 class="heading-3">Recent orders</h3>
+        <div class="customer">
+          <img
+            src="img/customer-1.png"
+            alt="customer 1"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">David</p>
+            <p class="customer__location">Italy</p>
+          </div>
+          <img
+            src="img/customer-2.png"
+            alt="customer 2"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Mohammad</p>
+            <p class="customer__location">India</p>
+          </div>
+          <img
+            src="img/customer-3.png"
+            alt="customer 3"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Amelia</p>
+            <p class="customer__location">France</p>
+          </div>
+          <img
+            src="img/customer-4.png"
+            alt="customer 4"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Olivia</p>
+            <p class="customer__location">USA</p>
+          </div>
+          <img
+            src="img/customer-5.png"
+            alt="customer 5"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Amit</p>
+            <p class="customer__location">Japan</p>
+          </div>
+          <img
+            src="img/customer-6.png"
+            alt="customer 6"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Ashraf</p>
+            <p class="customer__location">India</p>
+          </div>
+          <img
+            src="img/customer-7.png"
+            alt="customer 7"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Diana</p>
+            <p class="customer__location">Malaysia</p>
+          </div>
+          <img
+            src="img/customer-8.png"
+            alt="customer 8"
+            class="customer__img"
+          />
+          <div class="customer__details">
+            <p class="customer__name">Amit</p>
+            <p class="customer__location">India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

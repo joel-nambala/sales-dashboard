@@ -1,0 +1,31 @@
+// COLORS
+$color-primary: #f1f3f5;
+$color-secondary: #055361;
+$color-primary-1: #ccc;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: $color-primary;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) repeat(7, 1fr) 0.1rem;
+  grid-template-rows: 4rem max-content repeat(4, 1fr);
+  gap: 1.5rem;
+}

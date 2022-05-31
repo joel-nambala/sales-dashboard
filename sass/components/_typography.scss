@@ -1,0 +1,14 @@
+.heading-2 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  color: #fff;
+
+  & i {
+    margin-right: 2rem;
+  }
+}
+
+.heading-3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
